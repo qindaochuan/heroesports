@@ -129,7 +129,7 @@ public class TasksList extends HttpServlet {
 				"        ],\n" + 
 				"        \"rechargeItems\": [\n" + 
 				"            {\n" + 
-				"                \"type\": 2,\n" + 
+				"                \"type\":3,\n" + 
 				"                \"name\": \"<color=#BCD3F7>完成</c><color=#0000FF>首次</color><color=#BCD3F7>充值</color>\",\n" + 
 				"                \"amount\": 1,\n" + 
 				"                \"state\": 1,\n" + 
@@ -138,7 +138,7 @@ public class TasksList extends HttpServlet {
 				"                \"link\": null\n" + 
 				"            },\n" + 
 				"            {\n" + 
-				"                \"type\": 2,\n" + 
+				"                \"type\": 3,\n" + 
 				"                \"name\": \"<color=#BCD3F7>累计充值达</c><color=#0000FF>10</color><color=#BCD3F7>元</color>\",\n" + 
 				"                \"amount\": 2,\n" + 
 				"                \"state\": 1,\n" + 
@@ -147,7 +147,7 @@ public class TasksList extends HttpServlet {
 				"                \"link\": \"/sign\"\n" + 
 				"            },\n" + 
 				"            {\n" + 
-				"                \"type\": 2,\n" + 
+				"                \"type\": 3,\n" + 
 				"                \"name\": \"<color=#BCD3F7>累计充值达</c><color=#0000FF>50</color><color=#BCD3F7>元</color>\",\n" + 
 				"                \"amount\": 5,\n" + 
 				"                \"state\": null,\n" + 
@@ -156,7 +156,7 @@ public class TasksList extends HttpServlet {
 				"                \"link\": \"/account/deposit/?category=user\"\n" + 
 				"            },\n" + 
 				"            {\n" + 
-				"                \"type\": 2,\n" + 
+				"                \"type\": 3,\n" + 
 				"                \"name\": \"<color=#BCD3F7>累计充值达</c><color=#0000FF>100</color><color=#BCD3F7>元</color>\",\n" + 
 				"                \"amount\": 10,\n" + 
 				"                \"state\": null,\n" + 
@@ -165,7 +165,7 @@ public class TasksList extends HttpServlet {
 				"                \"link\": \"/account/deposit/withdrawal?category=user\"\n" + 
 				"            },\n" + 
 				"            {\n" + 
-				"                \"type\": 2,\n" + 
+				"                \"type\": 3,\n" + 
 				"                \"name\": \"<color=#BCD3F7>累计充值达</c><color=#0000FF>200</color><color=#BCD3F7>元</color>\",\n" + 
 				"                \"amount\": 20,\n" + 
 				"                \"state\": null,\n" + 
@@ -174,7 +174,7 @@ public class TasksList extends HttpServlet {
 				"                \"link\": \"/account/deposit/withdrawal?category=user\"\n" + 
 				"            },\n" + 
 				"            {\n" + 
-				"                \"type\": 2,\n" + 
+				"                \"type\": 3,\n" + 
 				"                \"name\": \"<color=#BCD3F7>累计充值达</c><color=#0000FF>500</color><color=#BCD3F7>元</color>\",\n" + 
 				"                \"amount\": 50,\n" + 
 				"                \"state\": null,\n" + 
