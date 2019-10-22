@@ -1,4 +1,4 @@
-package com.qianren.heroesports.servlet;
+package com.qianren.heroesports.lobby.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class UserBankAccountsList
+ * Servlet implementation class Users
  */
-@WebServlet("/userBankAccounts/list")
-public class UserBankAccountsList extends HttpServlet {
+@WebServlet("/users")
+public class Users extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public UserBankAccountsList() {
+    public Users() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -42,23 +42,19 @@ public class UserBankAccountsList extends HttpServlet {
 		out.println("{\n" + 
 				"    \"code\": 200,\n" + 
 				"    \"data\": {\n" + 
-				"        \"bankAccounts\": [\n" + 
-				"            {\n" + 
-				"                \"createDate\": \"2019-10-16 11:50:38\",\n" + 
-				"                \"rowState\": 0,\n" + 
-				"                \"id\": 266,\n" + 
-				"                \"userId\": 3150,\n" + 
-				"                \"bank\": \"民生银行\",\n" + 
-				"                \"bankBranch\": \"广东省-深圳市\",\n" + 
-				"                \"accountNumber\": \"6226220639132157\",\n" + 
-				"                \"accountName\": \"钟俊\",\n" + 
-				"                \"enabled\": 1,\n" + 
-				"                \"remark\": null,\n" + 
-				"                \"user\": null,\n" + 
-				"                \"lastModifiedDate\": \"2019-10-16 11:50:38\"\n" + 
-				"            }\n" + 
-				"        ],\n" + 
-				"        \"canAddBankAccount\": false\n" + 
+				"        \"nickname\": null,\n" + 
+				"        \"truename\": null,\n" + 
+				"        \"email\": null,\n" + 
+				"        \"birthdate\": null,\n" + 
+				"        \"hasSecureCode\": 1,\n" + 
+				"        \"profile\": null,\n" + 
+				"        \"telephone\": null,\n" + 
+				"        \"point\": 55,\n" + 
+				"        \"level\": 0,\n" + 
+				"        \"nextLevelPoint\": 220,\n" + 
+				"        \"coins\": 0,\n" + 
+				"        \"lastLoginDate\": \"2019-09-28 11:51:05\",\n" + 
+				"        \"lastLoginLocation\": \"本地\"\n" + 
 				"    },\n" + 
 				"    \"message\": \"success\"\n" + 
 				"}");
@@ -71,7 +67,7 @@ public class UserBankAccountsList extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
+	
 	@Override
 	protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub

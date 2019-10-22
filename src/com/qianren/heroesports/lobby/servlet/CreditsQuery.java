@@ -1,4 +1,4 @@
-package com.qianren.heroesports.servlet;
+package com.qianren.heroesports.lobby.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class EsbetsQuery
+ * Servlet implementation class CreditsQuery
  */
-@WebServlet("/esbets/query")
-public class EsbetsQuery extends HttpServlet {
+@WebServlet("/credits/query")
+public class CreditsQuery extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public EsbetsQuery() {
+    public CreditsQuery() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -44,58 +44,58 @@ public class EsbetsQuery extends HttpServlet {
 				"    \"data\": {\n" + 
 				"        \"content\": [\n" + 
 				"            {\n" + 
-				"                \"id\": 318,\n" + 
-				"                \"category\": \"DOTA2\",\n" + 
-				"                \"categoryId\": 1,\n" + 
-				"                \"username\": \"zhongjun11\",\n" + 
-				"                \"league\": null,\n" + 
-				"                \"eid\": null,\n" + 
-				"                \"gameId\": 49727,\n" + 
-				"                \"gameName\": \"MDL 成都Major - 中国\",\n" + 
-				"                \"startDate\": \"2019-10-07 15:31\",\n" + 
-				"                \"round\": 1,\n" + 
-				"                \"betType\": 2,\n" + 
-				"                \"teamLeft\": \"Aster\",\n" + 
-				"                \"teamRight\": \"EHOME\",\n" + 
-				"                \"matchId\": 78961,\n" + 
-				"                \"matchName\": \"杀敌数让分\",\n" + 
-				"                \"winner\": 0,\n" + 
-				"                \"value\": null,\n" + 
-				"                \"odds\": 1.68,\n" + 
-				"                \"matchState\": 0,\n" + 
-				"                \"betState\": 0,\n" + 
-				"                \"wager\": \"EHOME让分-4.5\",\n" + 
-				"                \"amount\": 5,\n" + 
-				"                \"win\": null,\n" + 
-				"                \"createDate\": \"2019-10-07 15:02:13\",\n" + 
-				"                \"rowState\": 0\n" + 
+				"                \"createDate\": \"2019-10-21 16:38:59\",\n" + 
+				"                \"rowState\": 0,\n" + 
+				"                \"id\": 1128,\n" + 
+				"                \"userId\": 3150,\n" + 
+				"                \"amount\": 10,\n" + 
+				"                \"creditBefore\": 30,\n" + 
+				"                \"balanceBefore\": 999.5,\n" + 
+				"                \"creditAfter\": 20,\n" + 
+				"                \"balanceAfter\": 1009.5,\n" + 
+				"                \"platformId\": 13,\n" + 
+				"                \"type\": 2,\n" + 
+				"                \"status\": 2,\n" + 
+				"                \"remark\": null,\n" + 
+				"                \"tnxNo\": \"ES201910211638594\",\n" + 
+				"                \"user\": null,\n" + 
+				"                \"lastModifiedDate\": \"2019-10-21 16:38:59\"\n" + 
 				"            },\n" + 
 				"            {\n" + 
-				"                \"id\": 317,\n" + 
-				"                \"category\": \"DOTA2\",\n" + 
-				"                \"categoryId\": 1,\n" + 
-				"                \"username\": \"zhongjun11\",\n" + 
-				"                \"league\": null,\n" + 
-				"                \"eid\": null,\n" + 
-				"                \"gameId\": 49727,\n" + 
-				"                \"gameName\": \"MDL 成都Major - 中国\",\n" + 
-				"                \"startDate\": \"2019-10-07 15:31\",\n" + 
-				"                \"round\": 0,\n" + 
-				"                \"betType\": 2,\n" + 
-				"                \"teamLeft\": \"Aster\",\n" + 
-				"                \"teamRight\": \"EHOME\",\n" + 
-				"                \"matchId\": 78956,\n" + 
-				"                \"matchName\": \"获胜者\",\n" + 
-				"                \"winner\": 0,\n" + 
-				"                \"value\": null,\n" + 
-				"                \"odds\": 2.48,\n" + 
-				"                \"matchState\": 0,\n" + 
-				"                \"betState\": 0,\n" + 
-				"                \"wager\": \"EHOME\",\n" + 
+				"                \"createDate\": \"2019-10-21 16:38:42\",\n" + 
+				"                \"rowState\": 0,\n" + 
+				"                \"id\": 1127,\n" + 
+				"                \"userId\": 3150,\n" + 
+				"                \"amount\": 20,\n" + 
+				"                \"creditBefore\": 10,\n" + 
+				"                \"balanceBefore\": 1019.5,\n" + 
+				"                \"creditAfter\": 30,\n" + 
+				"                \"balanceAfter\": 999.5,\n" + 
+				"                \"platformId\": 13,\n" + 
+				"                \"type\": 1,\n" + 
+				"                \"status\": 2,\n" + 
+				"                \"remark\": null,\n" + 
+				"                \"tnxNo\": \"ES201910211638416\",\n" + 
+				"                \"user\": null,\n" + 
+				"                \"lastModifiedDate\": \"2019-10-21 16:38:41\"\n" + 
+				"            },\n" + 
+				"            {\n" + 
+				"                \"createDate\": \"2019-10-21 16:38:05\",\n" + 
+				"                \"rowState\": 0,\n" + 
+				"                \"id\": 1126,\n" + 
+				"                \"userId\": 3150,\n" + 
 				"                \"amount\": 10,\n" + 
-				"                \"win\": null,\n" + 
-				"                \"createDate\": \"2019-10-07 14:56:31\",\n" + 
-				"                \"rowState\": 0\n" + 
+				"                \"creditBefore\": 0,\n" + 
+				"                \"balanceBefore\": 1029.5,\n" + 
+				"                \"creditAfter\": 10,\n" + 
+				"                \"balanceAfter\": 1019.5,\n" + 
+				"                \"platformId\": 13,\n" + 
+				"                \"type\": 1,\n" + 
+				"                \"status\": 2,\n" + 
+				"                \"remark\": null,\n" + 
+				"                \"tnxNo\": \"ES201910211638052\",\n" + 
+				"                \"user\": null,\n" + 
+				"                \"lastModifiedDate\": \"2019-10-21 16:38:05\"\n" + 
 				"            }\n" + 
 				"        ],\n" + 
 				"        \"pageable\": {\n" + 
@@ -111,7 +111,7 @@ public class EsbetsQuery extends HttpServlet {
 				"            \"unpaged\": false\n" + 
 				"        },\n" + 
 				"        \"totalPages\": 1,\n" + 
-				"        \"totalElements\": 2,\n" + 
+				"        \"totalElements\": 3,\n" + 
 				"        \"last\": true,\n" + 
 				"        \"first\": true,\n" + 
 				"        \"sort\": {\n" + 
@@ -119,7 +119,7 @@ public class EsbetsQuery extends HttpServlet {
 				"            \"unsorted\": true,\n" + 
 				"            \"empty\": true\n" + 
 				"        },\n" + 
-				"        \"numberOfElements\": 2,\n" + 
+				"        \"numberOfElements\": 3,\n" + 
 				"        \"size\": 100,\n" + 
 				"        \"number\": 0,\n" + 
 				"        \"empty\": false\n" + 
@@ -135,19 +135,17 @@ public class EsbetsQuery extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
+	
 	@Override
 	protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		super.doOptions(req, resp);
 		resp.setHeader("Access-Control-Allow-Origin", "*");
 		resp.setHeader("Access-Control-Allow-Headers", "Content-Type");
-		resp.addHeader("Access-Control-Allow-Headers", "Authorization");
 		resp.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
 		resp.setHeader("X-Powered-By", "3.2.1");
 		resp.setHeader("Access-Control-Allow-Credentials", "true");
 
 		resp.setHeader("Content-Type", "application/json;charset=utf-8");
 	}
-
 }

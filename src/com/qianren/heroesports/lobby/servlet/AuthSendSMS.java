@@ -1,4 +1,4 @@
-package com.qianren.heroesports.servlet;
+package com.qianren.heroesports.lobby.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class TasksApply
+ * Servlet implementation class AuthSendSMS
  */
-@WebServlet("/tasks/apply")
-public class TasksApply extends HttpServlet {
+@WebServlet("/auth/sendSMS")
+public class AuthSendSMS extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public TasksApply() {
+    public AuthSendSMS() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -40,9 +40,9 @@ public class TasksApply extends HttpServlet {
 		response.setHeader("Content-Type", "application/json;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		out.println("{\n" + 
-				"    \"code\": 200,\n" + 
-				"    \"data\": null,\n" + 
-				"    \"message\": \"success\"\n" + 
+				"  \"code\": 200,\n" + 
+				"  \"data\": {},\n" + 
+				"  \"message\": {}\n" + 
 				"}");
 	}
 

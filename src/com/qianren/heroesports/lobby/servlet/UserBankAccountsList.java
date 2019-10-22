@@ -1,4 +1,4 @@
-package com.qianren.heroesports.servlet;
+package com.qianren.heroesports.lobby.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Tasks
+ * Servlet implementation class UserBankAccountsList
  */
-@WebServlet("/tasks")
-public class Tasks extends HttpServlet {
+@WebServlet("/userBankAccounts/list")
+public class UserBankAccountsList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Tasks() {
+    public UserBankAccountsList() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -40,9 +40,27 @@ public class Tasks extends HttpServlet {
 		response.setHeader("Content-Type", "application/json;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		out.println("{\n" + 
-				"    \"code\": 400,\n" + 
-				"    \"data\": null,\n" + 
-				"    \"message\": \"该任务已经进行过,不能重复进行\"\n" + 
+				"    \"code\": 200,\n" + 
+				"    \"data\": {\n" + 
+				"        \"bankAccounts\": [\n" + 
+				"            {\n" + 
+				"                \"createDate\": \"2019-10-16 11:50:38\",\n" + 
+				"                \"rowState\": 0,\n" + 
+				"                \"id\": 266,\n" + 
+				"                \"userId\": 3150,\n" + 
+				"                \"bank\": \"民生银行\",\n" + 
+				"                \"bankBranch\": \"广东省-深圳市\",\n" + 
+				"                \"accountNumber\": \"6226220639132157\",\n" + 
+				"                \"accountName\": \"钟俊\",\n" + 
+				"                \"enabled\": 1,\n" + 
+				"                \"remark\": null,\n" + 
+				"                \"user\": null,\n" + 
+				"                \"lastModifiedDate\": \"2019-10-16 11:50:38\"\n" + 
+				"            }\n" + 
+				"        ],\n" + 
+				"        \"canAddBankAccount\": false\n" + 
+				"    },\n" + 
+				"    \"message\": \"success\"\n" + 
 				"}");
 	}
 
