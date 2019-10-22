@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.qianren.heroesports.utils.H5Utils;
+
 /**
  * Servlet implementation class AuthCountValidError
  */
@@ -30,12 +32,7 @@ public class AuthCountValidError extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		response.setHeader("Access-Control-Allow-Origin", "*");
-		//response.setHeader("Access-Control-Allow-Headers", "X-Requested-With");
-		response.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization");
-		response.setHeader("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
-		response.setHeader("X-Powered-By","3.2.1");
-		response.setHeader("Content-Type", "application/json;charset=utf-8");
+		H5Utils.setHeaders(response);
 		PrintWriter out =  response.getWriter();
 		out.println("{\n" + 
 				"    \"code\": 200,\n" + 

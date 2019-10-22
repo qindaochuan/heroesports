@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.qianren.heroesports.utils.H5Utils;
+
 /**
  * Servlet implementation class AuthLlogin
  */
@@ -32,13 +34,7 @@ public class AuthLogin extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
-		response.setHeader("Access-Control-Allow-Origin", "*");
-		response.setHeader("Access-Control-Allow-Headers", "Content-Type");
-		response.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
-		response.setHeader("X-Powered-By", "3.2.1");
-		response.setHeader("Access-Control-Allow-Credentials", "true");
-
-		response.setHeader("Content-Type", "application/json;charset=utf-8");
+		H5Utils.setHeaders(response);
 		PrintWriter out = response.getWriter();
 		out.println("{\n" + "  \"code\": 200,\n" + "  \"data\": {\n" + "    \"balance\": 0,\n" + "    \"coins\": 0,\n"
 				+ "    \"deposit\": 0,\n" + "    \"hasAvatar\": 0,\n" + "    \"id\": 0,\n"
