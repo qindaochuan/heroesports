@@ -33,6 +33,7 @@ public class EsbetsQuery extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		H5Utils.setHeaders(response);
+		System.out.println(response.getHeader("Content-Type"));
 		PrintWriter out = response.getWriter();
 		out.println("{\n" + 
 				"    \"code\": 200,\n" + 

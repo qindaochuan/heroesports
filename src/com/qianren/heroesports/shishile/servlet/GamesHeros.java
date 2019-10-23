@@ -2251,8 +2251,3237 @@ public class GamesHeros extends HttpServlet {
 					"    ],\n" + 
 					"    \"message\": \"success\"\n" + 
 					"}");
-		}else if(game.equals("")) {
-			
+		}else if(game.equals("gok")) {
+			out.println("{\n" + 
+					"    \"code\": 200,\n" + 
+					"    \"data\": [\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:50\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 114,\n" + 
+					"            \"name\": \"上官婉儿\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 1,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:50\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:50\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 115,\n" + 
+					"            \"name\": \"孙策\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 2,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:50\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:50\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 116,\n" + 
+					"            \"name\": \"盾山\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 3,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:50\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 117,\n" + 
+					"            \"name\": \"伽罗\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 4,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 118,\n" + 
+					"            \"name\": \"李信\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 5,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 119,\n" + 
+					"            \"name\": \"米莱狄\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 6,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 120,\n" + 
+					"            \"name\": \"狂铁\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 7,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 121,\n" + 
+					"            \"name\": \"裴擒虎\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 8,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 122,\n" + 
+					"            \"name\": \"明世隐\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 9,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 123,\n" + 
+					"            \"name\": \"沈梦溪\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 10,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 124,\n" + 
+					"            \"name\": \"公孙离\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 11,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 125,\n" + 
+					"            \"name\": \"梦奇\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 12,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 126,\n" + 
+					"            \"name\": \"弈星\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 13,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 127,\n" + 
+					"            \"name\": \"百里守约\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 14,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 128,\n" + 
+					"            \"name\": \"百里玄策\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 15,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:51\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 129,\n" + 
+					"            \"name\": \"苏烈\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 16,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:51\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 130,\n" + 
+					"            \"name\": \"铠\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 17,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 131,\n" + 
+					"            \"name\": \"黄忠\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 18,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 132,\n" + 
+					"            \"name\": \"大乔\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 19,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 133,\n" + 
+					"            \"name\": \"诸葛亮\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 20,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 134,\n" + 
+					"            \"name\": \"鬼谷子\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 21,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 135,\n" + 
+					"            \"name\": \"东皇太一\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 22,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 136,\n" + 
+					"            \"name\": \"太乙真人\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 23,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 137,\n" + 
+					"            \"name\": \"蔡文姬\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 24,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 138,\n" + 
+					"            \"name\": \"雅典娜\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 25,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 139,\n" + 
+					"            \"name\": \"干将莫邪\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 26,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 140,\n" + 
+					"            \"name\": \"哪吒\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 27,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 141,\n" + 
+					"            \"name\": \"女娲\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 28,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 142,\n" + 
+					"            \"name\": \"杨戬\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 29,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 143,\n" + 
+					"            \"name\": \"成吉思汗\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 30,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 144,\n" + 
+					"            \"name\": \"杨玉环\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 31,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 145,\n" + 
+					"            \"name\": \"钟馗\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 32,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 146,\n" + 
+					"            \"name\": \"虞姬\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 33,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 147,\n" + 
+					"            \"name\": \"李元芳\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 34,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 148,\n" + 
+					"            \"name\": \"张飞\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 35,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 149,\n" + 
+					"            \"name\": \"刘备\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 36,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 150,\n" + 
+					"            \"name\": \"后羿\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 37,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 151,\n" + 
+					"            \"name\": \"牛魔\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 38,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 152,\n" + 
+					"            \"name\": \"孙悟空\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 39,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 153,\n" + 
+					"            \"name\": \"亚瑟\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 40,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 154,\n" + 
+					"            \"name\": \"橘右京\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 41,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 155,\n" + 
+					"            \"name\": \"娜可露露\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 42,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 156,\n" + 
+					"            \"name\": \"不知火舞\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 43,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 157,\n" + 
+					"            \"name\": \"张良\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 44,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 158,\n" + 
+					"            \"name\": \"花木兰\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 45,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 159,\n" + 
+					"            \"name\": \"兰陵王\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 46,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:52\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 160,\n" + 
+					"            \"name\": \"王昭君\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 47,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:52\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 161,\n" + 
+					"            \"name\": \"韩信\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 48,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 162,\n" + 
+					"            \"name\": \"刘邦\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 49,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 163,\n" + 
+					"            \"name\": \"姜子牙\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 50,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 164,\n" + 
+					"            \"name\": \"露娜\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 51,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 165,\n" + 
+					"            \"name\": \"程咬金\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 52,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 166,\n" + 
+					"            \"name\": \"安琪拉\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 53,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 167,\n" + 
+					"            \"name\": \"貂蝉\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 54,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 168,\n" + 
+					"            \"name\": \"关羽\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 55,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 169,\n" + 
+					"            \"name\": \"老夫子\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 56,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 170,\n" + 
+					"            \"name\": \"司马懿\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 57,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 171,\n" + 
+					"            \"name\": \"武则天\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 58,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 172,\n" + 
+					"            \"name\": \"项羽\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 59,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 173,\n" + 
+					"            \"name\": \"达摩\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 60,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 174,\n" + 
+					"            \"name\": \"狄仁杰\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 61,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 175,\n" + 
+					"            \"name\": \"马可波罗\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 62,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 176,\n" + 
+					"            \"name\": \"李白\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 63,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 177,\n" + 
+					"            \"name\": \"宫本武藏\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 64,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 178,\n" + 
+					"            \"name\": \"典韦\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 65,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 179,\n" + 
+					"            \"name\": \"曹操\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 66,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 180,\n" + 
+					"            \"name\": \"甄姬\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 67,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 181,\n" + 
+					"            \"name\": \"夏侯惇\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 68,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 182,\n" + 
+					"            \"name\": \"元歌\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 69,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 183,\n" + 
+					"            \"name\": \"周瑜\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 70,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 184,\n" + 
+					"            \"name\": \"吕布\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 71,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 185,\n" + 
+					"            \"name\": \"芈月\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 72,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 186,\n" + 
+					"            \"name\": \"白起\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 73,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 187,\n" + 
+					"            \"name\": \"扁鹊\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 74,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 188,\n" + 
+					"            \"name\": \"孙膑\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 75,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 189,\n" + 
+					"            \"name\": \"钟无艳\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 76,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:59:43\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 190,\n" + 
+					"            \"name\": \"阿轲\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 77,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 191,\n" + 
+					"            \"name\": \"高渐离\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 78,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 192,\n" + 
+					"            \"name\": \"刘禅\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 79,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 193,\n" + 
+					"            \"name\": \"庄周\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 80,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 194,\n" + 
+					"            \"name\": \"鲁班七号\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 81,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 195,\n" + 
+					"            \"name\": \"孙尚香\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 82,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 196,\n" + 
+					"            \"name\": \"嬴政\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 83,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 197,\n" + 
+					"            \"name\": \"妲己\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 84,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 198,\n" + 
+					"            \"name\": \"墨子\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 85,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 199,\n" + 
+					"            \"name\": \"赵云\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 86,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 200,\n" + 
+					"            \"name\": \"小乔\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 87,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:58:53\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 201,\n" + 
+					"            \"name\": \"廉颇\",\n" + 
+					"            \"camp\": null,\n" + 
+					"            \"feature\": null,\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 1,\n" + 
+					"            \"hasMagic\": 1,\n" + 
+					"            \"game\": \"gok\",\n" + 
+					"            \"no\": 88,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:58:53\"\n" + 
+					"        }\n" + 
+					"    ],\n" + 
+					"    \"message\": \"success\"\n" + 
+					"}");
+		}
+		else if(game.equals("dota")) {
+			out.println("{\n" + 
+					"    \"code\": 200,\n" + 
+					"    \"data\": [\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 1,\n" + 
+					"            \"name\": \"大地之灵 考林\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 1,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 2,\n" + 
+					"            \"name\": \"孽主 维洛格罗斯\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 2,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 3,\n" + 
+					"            \"name\": \"地狱领主 亚巴顿\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 3,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 4,\n" + 
+					"            \"name\": \"军团指挥官 特斯丁\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 4,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 5,\n" + 
+					"            \"name\": \"凤凰 伊卡洛斯\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 5,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 6,\n" + 
+					"            \"name\": \"上古巨神 牛头人酋长\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 6,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 7,\n" + 
+					"            \"name\": \"钢背兽 黎格沃\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 7,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 8,\n" + 
+					"            \"name\": \"巨牙海民 尤弥尔\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 8,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 9,\n" + 
+					"            \"name\": \"地精撕裂者 瑞兹拉克\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 9,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 10,\n" + 
+					"            \"name\": \"半人猛犸 玛格纳斯\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 10,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 11,\n" + 
+					"            \"name\": \"不朽尸王 吟葬者·德兹\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 11,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:25\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 12,\n" + 
+					"            \"name\": \"混沌骑士 耐萨基\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 12,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:25\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 13,\n" + 
+					"            \"name\": \"狼人 贝恩霍勒\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 13,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 14,\n" + 
+					"            \"name\": \"裂魂人 巴拉森\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 14,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 15,\n" + 
+					"            \"name\": \"末日使者 路西法\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 15,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 16,\n" + 
+					"            \"name\": \"暗夜魔王 暗夜魔王\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 16,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 17,\n" + 
+					"            \"name\": \"噬魂鬼 奈克斯\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 17,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 18,\n" + 
+					"            \"name\": \"半人马战行者 布兰德瓦登\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 18,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 19,\n" + 
+					"            \"name\": \"精灵守卫 埃欧\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 19,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 20,\n" + 
+					"            \"name\": \"树精卫士 鲁夫特仑\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 20,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 21,\n" + 
+					"            \"name\": \"酒仙 曼吉克斯\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 21,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 22,\n" + 
+					"            \"name\": \"炼金术士 拉泽尔?黑酿\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 22,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 23,\n" + 
+					"            \"name\": \"神灵武士 哈斯卡\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 23,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 24,\n" + 
+					"            \"name\": \"全能骑士 普利斯特·雷霆\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 24,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:26\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 25,\n" + 
+					"            \"name\": \"发条技师 瑞托崔普\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 25,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:26\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 26,\n" + 
+					"            \"name\": \"龙骑士 戴维安\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 26,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 27,\n" + 
+					"            \"name\": \"兽王 卡洛克\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 27,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 28,\n" + 
+					"            \"name\": \"海军上将 昆卡\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 28,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 29,\n" + 
+					"            \"name\": \"骷髅王 奥斯塔里昂\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 29,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 30,\n" + 
+					"            \"name\": \"潮汐猎人 利维坦\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 30,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 31,\n" + 
+					"            \"name\": \"鱼人守卫 斯拉达\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 31,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 32,\n" + 
+					"            \"name\": \"山岭巨人 小小\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 32,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 33,\n" + 
+					"            \"name\": \"流浪剑客 斯温\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 33,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 34,\n" + 
+					"            \"name\": \"撼地者 雷格石蹄\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 34,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 35,\n" + 
+					"            \"name\": \"沙王 克里瑟历斯\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 35,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 36,\n" + 
+					"            \"name\": \"屠夫 帕吉\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 36,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 37,\n" + 
+					"            \"name\": \"斧王 蒙哥可汗\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"力量\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 37,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 38,\n" + 
+					"            \"name\": \"齐天大圣 孙悟空\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 38,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 39,\n" + 
+					"            \"name\": \"恐怖利刃 Terrorblade\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 39,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:27\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 40,\n" + 
+					"            \"name\": \"天穹守望者 泽特\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 40,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:27\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 41,\n" + 
+					"            \"name\": \"灰烬之灵 焮\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 41,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 42,\n" + 
+					"            \"name\": \"巨魔战将 扎·拉卡\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 42,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 43,\n" + 
+					"            \"name\": \"蛇发女妖 美杜莎\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 43,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 44,\n" + 
+					"            \"name\": \"赏金猎人 刚铎\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 44,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 45,\n" + 
+					"            \"name\": \"复仇之魂 仙德尔莎\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 45,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 46,\n" + 
+					"            \"name\": \"熊战士 乌尔萨\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 46,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 47,\n" + 
+					"            \"name\": \"圣堂刺客 拉娜娅\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 47,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 48,\n" + 
+					"            \"name\": \"卓尔游侠 崔希丝 \",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 48,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 49,\n" + 
+					"            \"name\": \"矮人直升机 奥雷尔\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 49,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 50,\n" + 
+					"            \"name\": \"隐形刺客 力丸\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 50,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 51,\n" + 
+					"            \"name\": \"月之公主 米拉娜\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 51,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 52,\n" + 
+					"            \"name\": \"幻影长矛手 阿兹瑞斯\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 52,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 53,\n" + 
+					"            \"name\": \"娜迦海妖 司里希丝\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 53,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 54,\n" + 
+					"            \"name\": \"变体精灵 墨斐琳\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 54,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 55,\n" + 
+					"            \"name\": \"月之骑士 露娜\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 55,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 56,\n" + 
+					"            \"name\": \"德鲁伊 悉拉\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 56,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 57,\n" + 
+					"            \"name\": \"主宰 尤涅若\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 57,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 58,\n" + 
+					"            \"name\": \"虚空假面 暗惧者\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 58,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 59,\n" + 
+					"            \"name\": \"鱼人夜行者 斯拉克\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 59,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 60,\n" + 
+					"            \"name\": \"冥界亚龙 蝮蛇\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 60,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 61,\n" + 
+					"            \"name\": \"剃刀 闪电幽魂\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 61,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 62,\n" + 
+					"            \"name\": \"地卜师 米波\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 62,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 63,\n" + 
+					"            \"name\": \"剧毒术士 里瑟尔\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 63,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 64,\n" + 
+					"            \"name\": \"幽鬼 墨丘利\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 64,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 65,\n" + 
+					"            \"name\": \"影魔 奈文摩尔\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 65,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 66,\n" + 
+					"            \"name\": \"幻影刺客 茉崔蒂\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 66,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 67,\n" + 
+					"            \"name\": \"编织者 斯吉茨格尔\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 67,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 68,\n" + 
+					"            \"name\": \"司夜刺客 阿努比·阿拉克\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 68,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 69,\n" + 
+					"            \"name\": \"育母蜘蛛 布蕾克·艾拉齐娜\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 69,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 70,\n" + 
+					"            \"name\": \"骷髅弓箭手 克林克兹\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 70,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 71,\n" + 
+					"            \"name\": \"血魔 史德利古尔\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 71,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 72,\n" + 
+					"            \"name\": \"狙击手 卡德尔·鹰眼\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 72,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 73,\n" + 
+					"            \"name\": \"敌法师 玛吉纳\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"敏捷\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 73,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 74,\n" + 
+					"            \"name\": \"神谕者 奈里夫\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 74,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 75,\n" + 
+					"            \"name\": \"寒冬飞龙 冰龙\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 75,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 76,\n" + 
+					"            \"name\": \"炸弹人 哥布林工程师\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 76,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 77,\n" + 
+					"            \"name\": \"天怒法师 扎贡纳斯\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 77,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 78,\n" + 
+					"            \"name\": \"双头龙 杰奇洛\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 78,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 79,\n" + 
+					"            \"name\": \"魅惑魔女 爱由莎\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 79,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 80,\n" + 
+					"            \"name\": \"先知 特夸亚\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 80,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 81,\n" + 
+					"            \"name\": \"死灵飞龙 维萨吉\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 81,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 82,\n" + 
+					"            \"name\": \"地精修补匠 鲍什\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 82,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 83,\n" + 
+					"            \"name\": \"暗影恶魔 艾瑞达\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 83,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 84,\n" + 
+					"            \"name\": \"暗影萨满 罗斯塔\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 84,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 85,\n" + 
+					"            \"name\": \"食人魔魔法 师安格贡\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 85,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 86,\n" + 
+					"            \"name\": \"沉默术士 诺崇\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 86,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 87,\n" + 
+					"            \"name\": \"祈求者 卡尔\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 87,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 88,\n" + 
+					"            \"name\": \"圣骑士 陈\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 88,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 89,\n" + 
+					"            \"name\": \"光之守卫 伊扎洛\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 89,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 90,\n" + 
+					"            \"name\": \"干扰者 萨尔\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 90,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 91,\n" + 
+					"            \"name\": \"大魔导师 拉比克\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 91,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 92,\n" + 
+					"            \"name\": \"黑暗贤者 依什卡菲尔\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"近战\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 92,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 93,\n" + 
+					"            \"name\": \"殁境神蚀者 哈比恩格\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 93,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 94,\n" + 
+					"            \"name\": \"受折磨的灵魂 拉席克\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 94,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 95,\n" + 
+					"            \"name\": \"蝙蝠骑士 金扎卡\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 95,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 96,\n" + 
+					"            \"name\": \"极寒幽魂 卡尔德\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 96,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 97,\n" + 
+					"            \"name\": \"暗影牧师 戴泽\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 97,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 98,\n" + 
+					"            \"name\": \"秀逗魔导士 莉娜\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 98,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 99,\n" + 
+					"            \"name\": \"众神之王 宙斯\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 99,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 100,\n" + 
+					"            \"name\": \"风行者 莱瑞蕾\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 100,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 101,\n" + 
+					"            \"name\": \"风暴之灵 风暴烈酒\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 101,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 102,\n" + 
+					"            \"name\": \"仙女龙 帕克\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 102,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 103,\n" + 
+					"            \"name\": \"遗忘法师 帕格纳\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 103,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 104,\n" + 
+					"            \"name\": \"水晶室女 莉莱\",\n" + 
+					"            \"camp\": \"天辉\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 104,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 105,\n" + 
+					"            \"name\": \"死亡先知 克萝贝露丝\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 105,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 106,\n" + 
+					"            \"name\": \"痛苦女王 阿卡莎\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 106,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 107,\n" + 
+					"            \"name\": \"术士 戴蒙·拉尼克\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 107,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 108,\n" + 
+					"            \"name\": \"瘟疫法师 罗坦德吉利\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 108,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 109,\n" + 
+					"            \"name\": \"谜团 达奇罗\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 109,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 110,\n" + 
+					"            \"name\": \"祸乱之源 阿特洛波斯\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 110,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 111,\n" + 
+					"            \"name\": \"巫妖 艾斯瑞安\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 111,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 112,\n" + 
+					"            \"name\": \"恶魔巫师 萊恩\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 112,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        },\n" + 
+					"        {\n" + 
+					"            \"createDate\": \"2019-09-24 17:32:28\",\n" + 
+					"            \"rowState\": 0,\n" + 
+					"            \"id\": 113,\n" + 
+					"            \"name\": \"巫医 扎瓦克\",\n" + 
+					"            \"camp\": \"夜魇\",\n" + 
+					"            \"feature\": \"智力\",\n" + 
+					"            \"attack\": \"远程\",\n" + 
+					"            \"attackShortName\": null,\n" + 
+					"            \"sex\": 0,\n" + 
+					"            \"hasMagic\": 0,\n" + 
+					"            \"game\": \"dota\",\n" + 
+					"            \"no\": 113,\n" + 
+					"            \"eid\": null,\n" + 
+					"            \"lastModifiedDate\": \"2019-09-24 17:32:28\"\n" + 
+					"        }\n" + 
+					"    ],\n" + 
+					"    \"message\": \"success\"\n" + 
+					"}");
 		}
 	}
 

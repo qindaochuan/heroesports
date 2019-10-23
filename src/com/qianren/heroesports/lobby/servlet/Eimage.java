@@ -1,11 +1,9 @@
 package com.qianren.heroesports.lobby.servlet;
 
-import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.PrintWriter;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -40,20 +38,19 @@ public class Eimage extends HttpServlet {
 		// TODO Auto-generated method stub
 		// response.getWriter().append("Served at: ").append(request.getContextPath());
 		H5Utils.setHeaders(response);
-
 		response.setHeader("Content-Type", "image/png");
-
 		String fileName = request.getParameter("file");
-		String fileUrl = "www.nmgdjkj.com/file/" + fileName;
-		URL url = new URL(fileUrl);
-		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-		connection.setRequestMethod("GET");
-		int contentLength = connection.getContentLength();
-		InputStream input = connection.getInputStream();
-		ServletOutputStream output = response.getOutputStream();
-		byte[] data = new byte[contentLength];
-		input.read(data);
-		output.write(data);
+		String path = request.getSession().getServletContext().getRealPath("");
+		String imagePath = path + "partylogo/" + fileName;
+		File file = new File(imagePath);
+		if (file.exists()) {
+			FileInputStream in = new FileInputStream(file);
+			byte[] buffer = new byte[(int) file.length()];
+			in.read(buffer);
+			ServletOutputStream output = response.getOutputStream();
+			output.write(buffer);
+			in.close();
+		}
 	}
 
 	/**
@@ -65,12 +62,11 @@ public class Eimage extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-	
-	@Override
-	protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.doOptions(req, resp);
-		H5Utils.setHeaders(resp);
-		resp.setHeader("Content-Type", "image/png");
-	}
+
+//	@Override
+//	protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//		// TODO Auto-generated method stub
+//		super.doOptions(req, resp);
+//		H5Utils.setHeaders(resp);
+//	}
 }
