@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.alibaba.fastjson.JSONObject;
 import com.qianren.heroesports.utils.H5Utils;
 
 /**
@@ -64,7 +65,29 @@ public class AuthLogin extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		//doGet(request, response);
+		H5Utils.setHeaders(response);
+		PrintWriter out = response.getWriter();
+		String postData = H5Utils.getPostData(request.getInputStream(), request.getContentLength(), null);
+		JSONObject object = JSONObject.parseObject(postData);
+		String username = object.getString("username");
+		if(username.equals("error")) {
+			out.println("{\n" + 
+					"    \"code\": 400,\n" + 
+					"    \"data\": null,\n" + 
+					"    \"message\": {\n" + 
+					"        \"en\": \"username or password is incorrect\",\n" + 
+					"        \"zh\": \"用户名或者密码不正确\"\n" + 
+					"    }\n" + 
+					"}");
+		}else {
+			out.println("{\n" + "  \"code\": 200,\n" + "  \"data\": {\n" + "    \"balance\": 0,\n" + "    \"coins\": 0,\n"
+					+ "    \"deposit\": 0,\n" + "    \"hasAvatar\": 0,\n" + "    \"id\": 0,\n"
+					+ "    \"lastLoginDate\": \"2019-09-26T12:25:43.731Z\",\n" + "    \"lastLoginLocation\": \"string\",\n"
+					+ "    \"level\": 0,\n" + "    \"nextLevelPoint\": 0,\n" + "    \"nickname\": \"string\",\n"
+					+ "    \"point\": 0,\n" + "    \"token\": \"string\",\n" + "    \"truename\": \"string\",\n"
+					+ "    \"username\": \"string\"\n" + "  },\n" + "  \"message\": {}\n" + "}");
+		}
 	}
 
 }

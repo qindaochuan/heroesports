@@ -35,8 +35,7 @@ public class GamesHeros extends HttpServlet {
 		H5Utils.setHeaders(response);
 		PrintWriter out = response.getWriter();
 		final String game = request.getParameter("game");
-		if(game.equals("lol")) {
-			System.out.println("111");
+		if(game == null || game.equals("lol")) {
 			out.println("{\n" + 
 					"    \"code\": 200,\n" + 
 					"    \"data\": [\n" + 
