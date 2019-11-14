@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn_treasure_can_open",
+    "texture": "59cJEBUO5GrbIwNwzgWkQF",
+    "rect": [
+      0,
+      0,
+      150,
+      162
+    ],
+    "offset": [
+      -8,
+      3
+    ],
+    "originalSize": [
+      166,
+      168
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

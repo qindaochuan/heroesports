@@ -1,0 +1,864 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "default_btn_disabled",
+      "texture": "71VhFCTINJM6/Ky3oX9nBT",
+      "rect": [
+        0,
+        0,
+        40,
+        40
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        40,
+        40
+      ],
+      "capInsets": [
+        12,
+        12,
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "icon_party_loglo1",
+      "texture": "b6Nf9U/7BKoYuk7XcuToYJ",
+      "rect": [
+        7,
+        2,
+        52,
+        50
+      ],
+      "offset": [
+        -1,
+        3
+      ],
+      "originalSize": [
+        68,
+        60
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "icon_tv",
+      "texture": "00JhvQl2FKhIoQZ+Abyasa",
+      "rect": [
+        2,
+        3,
+        21,
+        20
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        26,
+        26
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "competitionItem",
+      "data": {
+        "__id__": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "bg_competition_item",
+      "_children": [
+        {
+          "__id__": 2
+        },
+        {
+          "__id__": 3
+        },
+        {
+          "__id__": 4
+        },
+        {
+          "__id__": 5
+        },
+        {
+          "__id__": 6
+        },
+        {
+          "__id__": 7
+        },
+        {
+          "__id__": 8
+        },
+        {
+          "__id__": 9
+        },
+        {
+          "__id__": 10
+        },
+        {
+          "__id__": 11
+        },
+        {
+          "__id__": 12
+        },
+        {
+          "__id__": 13
+        }
+      ],
+      "_level": 1,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 1
+          },
+          "_spriteFrame": {
+            "__uuid__": "ccLJ1gkNZEWpXdBoX2lBEI"
+          }
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "23AD/OsEBIHYPwymxSpvLT"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 474,
+        "height": 162
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "button",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Button",
+          "node": {
+            "__id__": 2
+          },
+          "_N$transition": 3,
+          "transition": 3,
+          "_N$normalColor": {
+            "__type__": "cc.Color",
+            "r": 230,
+            "g": 230,
+            "b": 230
+          },
+          "_N$pressedColor": {
+            "__type__": "cc.Color",
+            "r": 200,
+            "g": 200,
+            "b": 200
+          },
+          "pressedColor": {
+            "__type__": "cc.Color",
+            "r": 200,
+            "g": 200,
+            "b": 200
+          },
+          "_N$disabledColor": {
+            "__type__": "cc.Color",
+            "r": 120,
+            "g": 120,
+            "b": 120,
+            "a": 200
+          },
+          "_N$normalSprite": {
+            "__uuid__": "ccLJ1gkNZEWpXdBoX2lBEI"
+          },
+          "_N$pressedSprite": {
+            "__uuid__": "e97GVMl6JHh5Ml5qEDdSGa"
+          },
+          "pressedSprite": {
+            "__uuid__": "e97GVMl6JHh5Ml5qEDdSGa"
+          },
+          "_N$hoverSprite": {
+            "__uuid__": "f0BIwQ8D5Ml7nTNQbh1YlS"
+          },
+          "hoverSprite": {
+            "__uuid__": "f0BIwQ8D5Ml7nTNQbh1YlS"
+          },
+          "_N$disabledSprite": {
+            "__uuid__": "29FYIk+N1GYaeWH/q1NxQO"
+          },
+          "_N$target": {
+            "__id__": 1
+          }
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "6cf8Z0R6VD6YvH9cxSND0q"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 474,
+        "height": 162
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon_game_logo",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 3
+          },
+          "_spriteFrame": {
+            "__uuid__": "feGJcrWotHNZnKIqjxihLI"
+          }
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "8ff+Q3SptC57Po2wjyEoz6"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 96,
+        "height": 26
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": -185,
+        "y": 60
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon_party_loglo1",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 4
+          },
+          "_spriteFrame": {
+            "__uuid__": "318B4Y5zNHaaHmtqr9THIh"
+          }
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "a1cnadG4JKc49pJ97xkxGf"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 52,
+        "height": 50
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": -160,
+        "y": 11
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon_party_loglo2",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 5
+          },
+          "_spriteFrame": {
+            "__uuid__": "f1/YaQ/5hA5oTjXO5OwzXv"
+          }
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "f1tdF8HWVFPYNmqqWav8vM"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 70,
+        "height": 46
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 160,
+        "y": 10
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "icon_tv",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 6
+          },
+          "_spriteFrame": {
+            "__uuid__": "55yFjcwRhBpbCvz/RLZwg6"
+          }
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "8aBaf9gtRJBq6hyWJxty+x"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 21,
+        "height": 20
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 7,
+        "y": -36
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 7
+          },
+          "_useOriginalSize": false,
+          "_string": "2019王者荣耀世界冠军杯 B07",
+          "_N$string": "2019王者荣耀世界冠军杯 B07",
+          "_fontSize": 12,
+          "_lineHeight": 12,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "3b721yUv9NHqCvAIi9QDIB"
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 167,
+        "g": 169,
+        "b": 173
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 159.38,
+        "height": 12
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 9,
+        "y": 58
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "vs",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 8
+          },
+          "_useOriginalSize": false,
+          "_string": "vs",
+          "_N$string": "vs",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "d93iIq+v5JYr2pt8/pBMT2"
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 167,
+        "g": 169,
+        "b": 173
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 40,
+        "height": 40
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 4,
+        "y": 38
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 9
+          },
+          "_useOriginalSize": false,
+          "_string": "100%",
+          "_N$string": "100%",
+          "_fontSize": 24,
+          "_lineHeight": 24,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "8dYSaT5shPSpCO+IMULgJR"
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 142,
+        "g": 142,
+        "b": 142
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 61.38,
+        "height": 24
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": -64,
+        "y": 4
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label copy",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 10
+          },
+          "_useOriginalSize": false,
+          "_string": "100%",
+          "_N$string": "100%",
+          "_fontSize": 24,
+          "_lineHeight": 24,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "30o07khsRJlKKKflLSE7Cv"
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 142,
+        "g": 142,
+        "b": 142
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 61.38,
+        "height": 24
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 82,
+        "y": 5
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label copy",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 11
+          },
+          "_useOriginalSize": false,
+          "_string": "竞猜中",
+          "_N$string": "竞猜中",
+          "_fontSize": 24,
+          "_lineHeight": 24,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "457VtFt/xOJJAAdB/c7NhG"
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "b": 255
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 72,
+        "height": 24
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 8,
+        "y": 3
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label copy",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 12
+          },
+          "_useOriginalSize": false,
+          "_string": "战队名字",
+          "_N$string": "战队名字",
+          "_fontSize": 18,
+          "_lineHeight": 18,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "f1Yfr3vCZJ8oYZ1Mxg8LM8"
+      },
+      "_color": {
+        "__type__": "cc.Color"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 72,
+        "height": 18
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": -159,
+        "y": -36
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label copy",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 13
+          },
+          "_useOriginalSize": false,
+          "_string": "战队名字",
+          "_N$string": "战队名字",
+          "_fontSize": 18,
+          "_lineHeight": 18,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "5ev9d6HhBNaYBwz9intTQh"
+        },
+        "fileId": "38GUxGo9JGcoxTrj0/aDse"
+      },
+      "_color": {
+        "__type__": "cc.Color"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 72,
+        "height": 18
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 152,
+        "y": -38
+      }
+    }
+  ],
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "bg_competition_item",
+      "texture": "9a+Lj1qjtE0LjbRZntHa3D",
+      "rect": [
+        0,
+        0,
+        474,
+        162
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        474,
+        162
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "default_btn_pressed",
+      "texture": "b4P/PCArtIdIH38t6mlw8Y",
+      "rect": [
+        0,
+        0,
+        40,
+        40
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        40,
+        40
+      ],
+      "capInsets": [
+        12,
+        12,
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "default_btn_normal",
+      "texture": "e8Ueib+qJEhL6mXAHdnwbi",
+      "rect": [
+        0,
+        0,
+        40,
+        40
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        40,
+        40
+      ],
+      "capInsets": [
+        12,
+        12,
+        12,
+        12
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "icon_party_loglo2",
+      "texture": "5aKXHZwlFJ7Zri3EB+m7Ya",
+      "rect": [
+        2,
+        2,
+        70,
+        46
+      ],
+      "offset": [
+        -2,
+        1
+      ],
+      "originalSize": [
+        78,
+        52
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "lbl_game_logo",
+      "texture": "c5c+sZjPpHzL6llTMiQMgr",
+      "rect": [
+        0,
+        0,
+        96,
+        26
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        96,
+        26
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

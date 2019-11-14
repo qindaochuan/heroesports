@@ -1,0 +1,49 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "yearItem",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 1
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "yearItem",
+    "_level": 1,
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 1
+        },
+        "_useOriginalSize": false,
+        "_string": "2019",
+        "_N$string": "2019",
+        "_fontSize": 80,
+        "_lineHeight": 80,
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "27dW67PTNEsJuW6Fj63U3U"
+      },
+      "fileId": "d1cddH/doRNQ4Aodz8556bh"
+    },
+    "_color": {
+      "__type__": "cc.Color",
+      "g": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 177.97,
+      "height": 80
+    }
+  }
+]

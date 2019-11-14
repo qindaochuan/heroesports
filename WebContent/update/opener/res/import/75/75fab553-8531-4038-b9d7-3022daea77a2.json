@@ -1,0 +1,70 @@
+{
+  "__type__": "cc.EffectAsset",
+  "_name": "Stone",
+  "properties": {
+    "texture": {
+      "type": 13,
+      "value": null
+    },
+    "color": {
+      "type": 9,
+      "displayName": "颜色",
+      "value": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "passes": [
+        {
+          "cullMode": 0,
+          "blend": true,
+          "program": "55ad634b6222384463a82873367d1978ea22896714e2c7414f8b3da2"
+        }
+      ],
+      "layer": 0,
+      "stages": [
+        "opaque"
+      ],
+      "queue": 0,
+      "priority": 0
+    }
+  ],
+  "shaders": [
+    {
+      "vert": "\n#define _IS_VERT_SHADER 1\n\nprecision highp float;\n\nuniform mat4 cc_matViewProj;\nattribute vec3 a_position;\nattribute vec2 a_uv0;\nvarying vec2 uv0;\nvoid main () {\n    vec4 pos = cc_matViewProj * vec4(a_position, 1);\n    gl_Position = pos;\n    uv0 = a_uv0;\n}\n\n\n",
+      "frag": "\n#define _IS_FRAG_SHADER 1\n\nprecision highp float;\n\nuniform sampler2D texture;\nuniform vec4 color;\nvarying vec2 uv0;\n\nvoid main () {\n    vec4 c = color * texture2D(texture, uv0);\n    float clrbright = (c.r + c.g + c.b) * (1. / 3.);\n    float gray = (0.6) * clrbright;\n    gl_FragColor = vec4(gray, gray, gray, c.a);\n}\n\n\n",
+      "defines": [],
+      "uniforms": [
+        {
+          "name": "texture",
+          "type": 13,
+          "defines": []
+        },
+        {
+          "name": "color",
+          "type": 7,
+          "defines": []
+        }
+      ],
+      "attributes": [
+        {
+          "name": "a_position",
+          "type": 6,
+          "defines": []
+        },
+        {
+          "name": "a_uv0",
+          "type": 5,
+          "defines": []
+        }
+      ],
+      "extensions": [],
+      "name": "55ad634b6222384463a82873367d1978ea22896714e2c7414f8b3da2"
+    }
+  ]
+}

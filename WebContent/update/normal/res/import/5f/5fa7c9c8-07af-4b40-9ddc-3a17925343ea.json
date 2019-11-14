@@ -1,0 +1,48 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "monthItem",
+    "data": {
+      "__id__": 1
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "monthItem",
+    "_level": 1,
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 1
+        },
+        "_useOriginalSize": false,
+        "_string": "12",
+        "_N$string": "12",
+        "_fontSize": 80,
+        "_lineHeight": 80,
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "5fp8nIB69LQJ3cOheSU0Pq"
+      },
+      "fileId": "d1cddH/doRNQ4Aodz8556bh"
+    },
+    "_color": {
+      "__type__": "cc.Color",
+      "g": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 88.98,
+      "height": 80
+    }
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "noticeContent",
+    "data": {
+      "__id__": 1
+    },
+    "optimizationPolicy": 1
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "noticeContent",
+    "_children": [
+      {
+        "__id__": 2
+      }
+    ],
+    "_level": 1,
+    "_components": [
+      {
+        "__type__": "cc.RichText",
+        "node": {
+          "__id__": 1
+        },
+        "_N$string": "<color=#99C1F5FF>Rich</c>",
+        "_N$fontSize": 22,
+        "_N$lineHeight": 22
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "b5MVy4YGlImZmIQ+61eaC+"
+      },
+      "fileId": "fd4fe1WoCpJK6rVCZ13Z14R"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 44.01,
+      "height": 27.72
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "y": 1
+    }
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 1
+    },
+    "_level": 2,
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 2
+        },
+        "_materials": [
+          {
+            "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+          }
+        ],
+        "_string": "Rich",
+        "_N$string": "Rich",
+        "_fontSize": 22,
+        "_lineHeight": 22,
+        "_N$verticalAlign": 1
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "b5MVy4YGlImZmIQ+61eaC+"
+      },
+      "fileId": "6eC8oR8FZFxab9Xwf9jCsB"
+    },
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 153,
+      "g": 193,
+      "b": 245
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 44.01,
+      "height": 27.72
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2"
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "y": -27.72
+    }
+  }
+]

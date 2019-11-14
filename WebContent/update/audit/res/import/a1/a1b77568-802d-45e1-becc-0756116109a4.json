@@ -1,0 +1,145 @@
+{
+  "__type__": "cc.EffectAsset",
+  "_name": "CirclePortrait",
+  "properties": {
+    "texture": {
+      "type": 13,
+      "value": null
+    },
+    "u_edge": {
+      "type": 4,
+      "displayName": "边缘(0~1)",
+      "tooltip": "范围0~1",
+      "value": 0.5
+    },
+    "u_offset": {
+      "type": 4,
+      "displayName": "边缘外发光(0~0.1)",
+      "value": 0.01
+    },
+    "edge_blur": {
+      "type": 4,
+      "displayName": "边缘羽化(0.01~0.1)",
+      "value": 0.01
+    },
+    "color0": {
+      "type": 9,
+      "displayName": "颜色",
+      "value": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "edge_color0": {
+      "type": 9,
+      "displayName": "截取边缘颜色",
+      "value": [
+        1,
+        1,
+        1,
+        0
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "passes": [
+        {
+          "cullMode": 0,
+          "blend": true,
+          "program": "2c0fd6e5cd1cded3e03483f32a237b4cd3f397298aa7b5ddc67ad8ea"
+        }
+      ],
+      "layer": 0,
+      "stages": [
+        "opaque"
+      ],
+      "queue": 0,
+      "priority": 0
+    }
+  ],
+  "shaders": [
+    {
+      "vert": "\n#define _IS_VERT_SHADER 1\n\n    precision highp float;\n\n    uniform mat4 cc_matViewProj;\n    attribute vec4 a_position;\n    attribute vec2 a_uv0;\n    varying vec2 uv0;\n    void main()\n    {\n        gl_Position = cc_matViewProj * a_position;\n        uv0 = a_uv0;\n    }\n\n\n",
+      "frag": "\n#define _IS_FRAG_SHADER 1\n\n   precision highp float;\n\n    \n    \n    uniform sampler2D texture;\n    \n    varying vec2 uv0;\n    \n    uniform float u_edge;\n\n    uniform vec4 color0; \n\n#if IS_Edge_Blur\n    uniform float edge_blur; \n#endif\n\n#if IS_EdgeGlowing\n    uniform float u_offset; \n#endif\n\n#if USE_EDGE_COLOR\n    uniform vec4 edge_color0; \n#endif\n\nvec4 drawCircle() {\n    float edge = u_edge;\n    float dis = 0.0;\n\n    float offset = 0.0;\n    vec2 uv = uv0;\n\n#if IS_EdgeGlowing\n  offset =  u_offset; \n  uv = vec2(0.5 + (uv0.x - 0.5) * ((offset*2.0) + 1.0), 0.5 + (uv0.y - 0.5) * ((offset*2.0) + 1.0)); \n#endif\n         \n        if ( uv.x < edge )\n        {\n            if ( uv.y < edge )\n            {\n                dis = distance( uv, vec2(edge, edge) );\n            }\n            if ( uv.y > (1.0 - edge) )\n            {\n                dis = distance( uv, vec2(edge, (1.0 - edge)) );\n            }\n        }\n        else if ( uv.x > (1.0 - edge) )\n        {\n            if ( uv.y < edge )\n            {\n                dis = distance( uv, vec2((1.0 - edge), edge ) );\n            }\n            if ( uv.y > (1.0 - edge) )\n            {\n                dis = distance( uv, vec2((1.0 - edge), (1.0 - edge) ) );\n            }\n        }\n\n        \n        vec4 color = color0 * texture2D(texture,uv);\n        \n        vec4 edge_color = color;\n        \n        float blur = 0.0;\n      \n      #if IS_Edge_Blur\n          blur = edge_blur;\n      #endif\n\n      \n      #if USE_EDGE_COLOR\n        \n        #if USER_TEXTURE_COLOR\n          edge_color = edge_color0  * texture2D(texture,uv);\n        #else\n          edge_color = edge_color0;\n        #endif\n      #endif\n        \n        if(dis > 0.001)\n        {\n            \n            float gap = edge * blur;\n            if(dis <= edge - gap)\n            {\n                color = color;\n            }\n            else if(dis <= edge)\n            {\n                \n                float t = smoothstep(0.,gap,edge-dis);\n                \n                \n                color = vec4(edge_color.rgb,t * edge_color.a);\n            }else{\n                \n                \n                \n                #if IS_EdgeGlowing\n                    color = vec4(edge_color.rgb, (offset - (dis - edge))/offset); \n                  #else\n                    color = vec4(edge_color.rgb,0.); \n                #endif\n            }\n        }\n        else\n        {\n          \n          #if IS_EdgeGlowing\n                float absX = abs(uv.x - 0.5);\n                if(absX > 0.5)\n                {\n                    color = vec4( edge_color.rgb, (offset - (absX - 0.5))/offset);\n                }\n                else \n                {\n                    float absY = abs(uv.y - 0.5);\n                    if (absY > 0.5){\n                        color = vec4( edge_color.rgb, (offset - (absX - 0.5))/offset);\n                    }\n                    else{\n                          color =  color;\n                    }\n                }\n            #else\n              color =  color;\n          #endif\n        }\n    return  color; \n}\n\n    void main()\n    {\n      vec4 color = drawCircle();\n      gl_FragColor = color;\n    }\n\n\n",
+      "defines": [
+        {
+          "name": "IS_Edge_Blur",
+          "type": "boolean",
+          "defines": []
+        },
+        {
+          "name": "IS_EdgeGlowing",
+          "type": "boolean",
+          "defines": []
+        },
+        {
+          "name": "USE_EDGE_COLOR",
+          "type": "boolean",
+          "defines": []
+        },
+        {
+          "name": "USER_TEXTURE_COLOR",
+          "type": "boolean",
+          "defines": [
+            "USE_EDGE_COLOR"
+          ]
+        }
+      ],
+      "uniforms": [
+        {
+          "name": "texture",
+          "type": 13,
+          "defines": []
+        },
+        {
+          "name": "u_edge",
+          "type": 4,
+          "defines": []
+        },
+        {
+          "name": "color0",
+          "type": 7,
+          "defines": []
+        },
+        {
+          "name": "edge_blur",
+          "type": 4,
+          "defines": [
+            "IS_Edge_Blur"
+          ]
+        },
+        {
+          "name": "u_offset",
+          "type": 4,
+          "defines": [
+            "IS_EdgeGlowing"
+          ]
+        },
+        {
+          "name": "edge_color0",
+          "type": 7,
+          "defines": [
+            "USE_EDGE_COLOR"
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": "a_position",
+          "type": 7,
+          "defines": []
+        },
+        {
+          "name": "a_uv0",
+          "type": 5,
+          "defines": []
+        }
+      ],
+      "extensions": [],
+      "name": "2c0fd6e5cd1cded3e03483f32a237b4cd3f397298aa7b5ddc67ad8ea"
+    }
+  ]
+}

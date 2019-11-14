@@ -1,0 +1,225 @@
+[
+  [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "taskLogItem",
+      "data": {
+        "__id__": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "taskLogItem",
+      "_children": [
+        {
+          "__id__": 2
+        },
+        {
+          "__id__": 3
+        },
+        {
+          "__id__": 4
+        }
+      ],
+      "_level": 1,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 1
+          },
+          "_materials": [
+            {
+              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }
+          ],
+          "_spriteFrame": {
+            "__uuid__": "68ZgXF6iBHzoERDFsw9ir+"
+          },
+          "_sizeMode": 2
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "3eekwVNPxJEol2sMqLyS2F"
+        },
+        "fileId": "192SXCuXZKY4oNFdSQI/RR"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 660,
+        "height": 96
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "time",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 2
+          },
+          "_materials": [
+            {
+              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }
+          ],
+          "_useOriginalSize": false,
+          "_string": "2019-09-04 17:29:09",
+          "_N$string": "2019-09-04 17:29:09",
+          "_fontSize": 20,
+          "_lineHeight": 20,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "3eekwVNPxJEol2sMqLyS2F"
+        },
+        "fileId": "78wfKu+7pI2YTHjElC/Npo"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 185.71,
+        "height": 25.2
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": -227.062,
+        "y": -2.838
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "reward",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 3
+          },
+          "_materials": [
+            {
+              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }
+          ],
+          "_useOriginalSize": false,
+          "_string": "5经验",
+          "_N$string": "5经验",
+          "_fontSize": 20,
+          "_lineHeight": 20,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "3eekwVNPxJEol2sMqLyS2F"
+        },
+        "fileId": "9fa2QafWdDZIFTzmkOZhRF"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 51.12,
+        "height": 25.2
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "name",
+      "_parent": {
+        "__id__": 1
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 4
+          },
+          "_materials": [
+            {
+              "__uuid__": "ecpdLyjvZBwrvm+cedCcQy"
+            }
+          ],
+          "_useOriginalSize": false,
+          "_string": "设置资金密码",
+          "_N$string": "设置资金密码",
+          "_fontSize": 20,
+          "_lineHeight": 20,
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "3eekwVNPxJEol2sMqLyS2F"
+        },
+        "fileId": "4bw0iBGtVJv4B0HtI7eMKr"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 120,
+        "height": 25.2
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 229.9,
+        "y": -2.839
+      }
+    }
+  ],
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "bg_activity_item",
+      "texture": "ae78Rp3VFAtIXemNojQ/WV",
+      "rect": [
+        0,
+        0,
+        660,
+        96
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        660,
+        96
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

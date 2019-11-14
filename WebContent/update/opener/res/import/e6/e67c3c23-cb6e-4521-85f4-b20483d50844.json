@@ -1,0 +1,105 @@
+{
+  "__type__": "cc.EffectAsset",
+  "_name": "Fluxay",
+  "properties": {
+    "texture": {
+      "type": 13,
+      "value": null
+    },
+    "color": {
+      "type": 9,
+      "displayName": "颜色",
+      "value": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "width": {
+      "type": 4,
+      "displayName": "流光的宽度范围",
+      "value": 0.08
+    },
+    "strength": {
+      "type": 4,
+      "displayName": "流光增亮强度",
+      "value": 0.008
+    },
+    "offset": {
+      "type": 4,
+      "displayName": "偏移值 ",
+      "value": 0.5
+    }
+  },
+  "techniques": [
+    {
+      "passes": [
+        {
+          "cullMode": 0,
+          "blend": true,
+          "program": "9d87ffdf5543b83137c12edcfd62ebd35b1baf6739ee63ce8780e58b"
+        }
+      ],
+      "layer": 0,
+      "stages": [
+        "opaque"
+      ],
+      "queue": 0,
+      "priority": 0
+    }
+  ],
+  "shaders": [
+    {
+      "vert": "\n#define _IS_VERT_SHADER 1\n\nprecision highp float;\n\nuniform mat4 cc_matViewProj;\nattribute vec3 a_position;\nattribute vec2 a_uv0;\nvarying vec2 uv0;\nvoid main () {\n    vec4 pos = cc_matViewProj * vec4(a_position, 1);\n    gl_Position = pos;\n    uv0 = a_uv0;\n}\n\n\n",
+      "frag": "\n#define _IS_FRAG_SHADER 1\n\nprecision highp float;\n\nuniform sampler2D texture;\nuniform vec4 color;\nuniform float time;\n\nuniform float width;\nuniform float strength;\nuniform float offset;\nvarying vec2 uv0;\n\nvoid main()\n{\n    vec4 src_color = color * texture2D(texture, uv0).rgba;\n    float start = tan(time/1.414);  \n    \n    if(uv0.x < (start - offset * uv0.y) &&  uv0.x > (start - offset * uv0.y - width))\n    {\n        vec3 improve = strength * vec3(255, 255, 255);\n        vec3 result = improve * vec3( src_color.r, src_color.g, src_color.b);\n        gl_FragColor = vec4(result, src_color.a);\n\n    }else{\n        gl_FragColor = src_color;\n    }\n}\n\n\n",
+      "defines": [],
+      "uniforms": [
+        {
+          "name": "texture",
+          "type": 13,
+          "defines": []
+        },
+        {
+          "name": "color",
+          "type": 7,
+          "defines": []
+        },
+        {
+          "name": "time",
+          "type": 4,
+          "defines": []
+        },
+        {
+          "name": "width",
+          "type": 4,
+          "defines": []
+        },
+        {
+          "name": "strength",
+          "type": 4,
+          "defines": []
+        },
+        {
+          "name": "offset",
+          "type": 4,
+          "defines": []
+        }
+      ],
+      "attributes": [
+        {
+          "name": "a_position",
+          "type": 6,
+          "defines": []
+        },
+        {
+          "name": "a_uv0",
+          "type": 5,
+          "defines": []
+        }
+      ],
+      "extensions": [],
+      "name": "9d87ffdf5543b83137c12edcfd62ebd35b1baf6739ee63ce8780e58b"
+    }
+  ]
+}

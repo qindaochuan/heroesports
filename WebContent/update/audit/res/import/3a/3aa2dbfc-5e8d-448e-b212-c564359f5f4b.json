@@ -1,0 +1,95 @@
+{
+  "__type__": "cc.EffectAsset",
+  "_name": "SearchLight",
+  "properties": {
+    "texture": {
+      "type": 13,
+      "value": null
+    },
+    "iResolution": {
+      "type": 5,
+      "displayName": "分辨率",
+      "value": [
+        1280,
+        720,
+        0
+      ]
+    },
+    "mouse": {
+      "type": 5,
+      "displayName": "鼠标",
+      "value": [
+        640,
+        360
+      ]
+    },
+    "radius": {
+      "type": 5,
+      "displayName": "半径",
+      "value": [
+        100,
+        100
+      ]
+    }
+  },
+  "techniques": [
+    {
+      "passes": [
+        {
+          "cullMode": 0,
+          "blend": true,
+          "program": "94f349ce01545b558563176b6a28116b95a69e908f5d7be0b1af2f74"
+        }
+      ],
+      "layer": 0,
+      "stages": [
+        "opaque"
+      ],
+      "queue": 0,
+      "priority": 0
+    }
+  ],
+  "shaders": [
+    {
+      "vert": "\n#define _IS_VERT_SHADER 1\n\nprecision highp float;\n\nuniform mat4 cc_matViewProj;\n    attribute vec4 a_position;\n    attribute vec2 a_uv0;\n    varying vec2 uv0;\n\n    void main()\n    {\n        gl_Position = cc_matViewProj * a_position;\n        uv0 = a_uv0;\n    }\n\n\n",
+      "frag": "\n#define _IS_FRAG_SHADER 1\n\n    precision highp float;\n\n    \n    uniform sampler2D texture;\n    \n    varying vec2 uv0;\n\n    uniform vec2 iResolution;\n    uniform vec2 mouse;\n    uniform vec2 radius;\n\n    void mainImage( out vec4 fragColor, in vec2 fragCoord )\n    {\n        \n        vec2 imouse = vec2(mouse.x, iResolution.y - mouse.y);\n        \n        vec2 uv = uv0.xy ;\n        \n        vec4 tex = texture2D(texture, uv);\n        \n        vec2 d = uv*iResolution.xy -imouse.xy ;\n        \n        vec2 s = radius;\n        \n        float r = dot(d, d)/dot(s,s);\n        vec4 finalColor =  tex * (1.08 - r);   \n        fragColor = vec4(finalColor.rgb,0.75);\n    }\n    void main()\n    {\n        mainImage(gl_FragColor, uv0.xy);\n    }\n\n\n",
+      "defines": [],
+      "uniforms": [
+        {
+          "name": "texture",
+          "type": 13,
+          "defines": []
+        },
+        {
+          "name": "iResolution",
+          "type": 5,
+          "defines": []
+        },
+        {
+          "name": "mouse",
+          "type": 5,
+          "defines": []
+        },
+        {
+          "name": "radius",
+          "type": 5,
+          "defines": []
+        }
+      ],
+      "attributes": [
+        {
+          "name": "a_position",
+          "type": 7,
+          "defines": []
+        },
+        {
+          "name": "a_uv0",
+          "type": 5,
+          "defines": []
+        }
+      ],
+      "extensions": [],
+      "name": "94f349ce01545b558563176b6a28116b95a69e908f5d7be0b1af2f74"
+    }
+  ]
+}
