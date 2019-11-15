@@ -37,6 +37,8 @@ public class UpdateAppVersion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		// 是否是苹果审核
+		final boolean isAudit = true;
 		final String user = request.getParameter("user");
 		final String path = request.getSession().getServletContext().getRealPath("");
 		// normal 正式用户
@@ -52,9 +54,19 @@ public class UpdateAppVersion extends HttpServlet {
 			JSONObject dataObj = new JSONObject();
 			dataObj.put("major", major);
 			dataObj.put("minor", minor);
-			dataObj.put("updateUrl", "/update/" + user + "/");
-			dataObj.put("forceUpdateUrl","https://fir.im/8knv");
-			dataObj.put("pakcageJsonUrl","/update/" + user + "/res/package.json");
+			dataObj.put("forceUpdateUrl", "https://fir.im/8knv");
+			if(user.equals("audit")) {
+				if(isAudit) {
+					dataObj.put("updateUrl", "/update/" + "audit" + "/");
+					dataObj.put("pakcageJsonUrl", "/update/" + "audit" + "/res/package.json");
+				}else {
+					dataObj.put("updateUrl", "/update/" + "normal" + "/");
+					dataObj.put("pakcageJsonUrl", "/update/" + "normal" + "/res/package.json");
+				}
+			}else {
+				dataObj.put("updateUrl", "/update/" + user + "/");
+				dataObj.put("pakcageJsonUrl", "/update/" + user + "/res/package.json");
+			}
 			resultObj.put("code", 200);
 			resultObj.put("data", dataObj);
 			resultObj.put("message", "success");
