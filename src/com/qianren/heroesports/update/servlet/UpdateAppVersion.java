@@ -53,6 +53,8 @@ public class UpdateAppVersion extends HttpServlet {
 			dataObj.put("major", major);
 			dataObj.put("minor", minor);
 			dataObj.put("updateUrl", "/update/" + user + "/");
+			dataObj.put("forceUpdateUrl","https://fir.im/8knv");
+			dataObj.put("pakcageJsonUrl","/update/" + user + "/res/package.json");
 			resultObj.put("code", 200);
 			resultObj.put("data", dataObj);
 			resultObj.put("message", "success");

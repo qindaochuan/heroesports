@@ -1689,14 +1689,6 @@ window.__require = function e(t, n, r) {
             true == data.data.showCaptcha && (self.bgSecurity.node.active = true);
           }
         });
-        var writablePath = jsb.fileUtils.getWritablePath();
-        var path = writablePath + "test.png";
-        var url = "http://192.168.0.82:8080/heroesports/partylogo/02bd979de74097486068094b23afe41e.png";
-        cc.log(path, url);
-        mycc.HttpHelper.getInstance().fetch(url, path, function(ok, filename) {
-          cc.log(11111111);
-          cc.log(ok, filename);
-        });
       },
       start: function start() {},
       tapGetSecurityCode: function tapGetSecurityCode(sender, customEventData) {
@@ -1774,6 +1766,9 @@ window.__require = function e(t, n, r) {
       checkRemberPassword: function checkRemberPassword(sender, customEventData) {},
       tapForgetPassword: function tapForgetPassword(sender, customEventData) {
         cc.director.loadScene("ResetPasswordScene");
+      },
+      tapButton: function tapButton(sender, customEventData) {
+        cc.director.loadScene("HallScene");
       }
     });
     cc._RF.pop();
@@ -2942,6 +2937,163 @@ window.__require = function e(t, n, r) {
       return stateStr[state];
     };
     module.exports = Tools;
+    cc._RF.pop();
+  }, {} ],
+  UpdateScene: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "00403DL40xP/7qqcKP/ytIb", "UpdateScene");
+    "use strict";
+    cc.Class({
+      extends: cc.Component,
+      properties: {
+        progressBar: {
+          default: null,
+          type: cc.ProgressBar
+        },
+        status: {
+          default: null,
+          type: cc.Label
+        },
+        percent: {
+          default: null,
+          type: cc.Label
+        },
+        updateServerUrl: "http://192.168.0.82:8080/heroesports",
+        user: "opener",
+        updateDir: "update",
+        updateTempDir: "updateTemp"
+      },
+      onLoad: function onLoad() {
+        cc.log("onLoad");
+        cc.debug.setDisplayStats(false);
+        cc.view.setOrientation(cc.macro.ORIENTATION_LANDSCAPE);
+        var self = this;
+        this.initUpdate();
+        var xhr = new XMLHttpRequest();
+        var url = this.updateServerUrl + "/update/appversion?user=" + this.user;
+        xhr.open("GET", url);
+        xhr.send();
+        xhr.onreadystatechange = function() {
+          if (4 === xhr.readyState && 200 === xhr.status) {
+            var jsonData = null;
+            try {
+              jsonData = JSON.parse(xhr.responseText);
+            } catch (e) {
+              cc.log("parsing error: ", xhr.responseText);
+            }
+            if (200 == parseInt(jsonData.code)) {
+              var major = jsonData.data.major;
+              var minor = jsonData.data.minor;
+              self.updateUrl = self.updateServerUrl + jsonData.data.updateUrl;
+              self.forceUpdateUrl = jsonData.data.forceUpdateUrl;
+              self.pakcageJsonUrl = jsonData.data.pakcageJsonUrl;
+              self.checkNeedUpate(major, minor);
+            }
+          }
+        };
+      },
+      initUpdate: function initUpdate() {
+        var writeablePath = jsb.fileUtils.getWritablePath();
+        this.updateDir = writeablePath + this.updateDir;
+        if (false == jsb.fileUtils.isDirectoryExist(this.updateDir)) {
+          var packageJson = jsb.fileUtils.getStringFromFile("res/package.json");
+          var jsonData = JSON.parse(packageJson);
+          jsb.fileUtils.createDirectory(this.updateDir);
+          for (var filePath in jsonData.files) this.copyAssetFile(filePath);
+          var fileData = jsb.fileUtils.getDataFromFile("res/package.json");
+          jsb.fileUtils.writeDataToFile(fileData, this.updateDir + "/res/package.json");
+        }
+        this.updateTempDir = writeablePath + this.updateTempDir;
+        false == jsb.fileUtils.isDirectoryExist(this.updateTempDir) && jsb.fileUtils.createDirectory(this.updateTempDir);
+      },
+      checkNeedUpate: function checkNeedUpate(remoteMajor, remoteMinor) {
+        var packageJson = jsb.fileUtils.getStringFromFile(this.updateDir + "/res/package.json");
+        var jsonData = JSON.parse(packageJson);
+        var localMajor = jsonData.major;
+        var localMinor = jsonData.minor;
+        cc.log("\u672c\u5730\u7248\u672c\u53f7:", localMajor, localMinor);
+        cc.log("\u670d\u52a1\u5668\u7248\u672c\u53f7:", remoteMajor, remoteMinor);
+        localMajor < remoteMajor ? cc.sys.openURL(this.forceUpdateUrl) : localMajor > remoteMajor ? cc.director.loadScene("LoginScene") : (localMajor = remoteMajor) && (localMinor < remoteMinor ? this.fetchResourceList() : cc.director.loadScene("LoginScene"));
+      },
+      copyAssetFile: function copyAssetFile(filePath) {
+        var dotIndex = filePath.lastIndexOf("/");
+        var tempDir = filePath.substr(0, dotIndex);
+        var dir = this.updateDir + "/" + tempDir;
+        false == jsb.fileUtils.isDirectoryExist(dir) && jsb.fileUtils.createDirectory(dir);
+        var fileData = jsb.fileUtils.getDataFromFile(filePath);
+        jsb.fileUtils.writeDataToFile(fileData, this.updateDir + "/" + filePath);
+      },
+      fetchResourceList: function fetchResourceList() {
+        var self = this;
+        var path = this.updateTempDir + "/package.json";
+        var url = this.updateServerUrl + this.pakcageJsonUrl;
+        cc.log(path, url);
+        mycc.HttpHelper.getInstance().fetch(url, path, function(ok, filename) {
+          ok && self.compareFiles();
+        });
+      },
+      compareFiles: function compareFiles() {
+        var localPackageJson = jsb.fileUtils.getStringFromFile(this.updateDir + "/res/package.json");
+        var localJsonData = JSON.parse(localPackageJson);
+        var localFileList = localJsonData.files;
+        var remotePackageJson = jsb.fileUtils.getStringFromFile(this.updateTempDir + "/package.json");
+        var remoteJsonData = JSON.parse(remotePackageJson);
+        var remoteFileList = remoteJsonData.files;
+        this.needRemoveFiles = new Array();
+        for (var file in localFileList) if (!remoteFileList[file]) {
+          cc.log("need remove: ", file);
+          this.needRemoveFiles.push(file);
+        }
+        this.needFetchFiles = new Array();
+        for (var _file in remoteFileList) if (localFileList[_file] != remoteFileList[_file]) {
+          cc.log("need fetch: ", _file);
+          this.needFetchFiles.push(_file);
+        }
+        if (this.needFetchFiles.length > 0) {
+          this.fetchIndex = 0;
+          this.fetchOne();
+        } else cc.director.loadScene("LoginScene");
+      },
+      fetchOne: function fetchOne() {
+        var self = this;
+        var filePath = this.needFetchFiles[this.fetchIndex];
+        var url = this.updateUrl + "/" + filePath;
+        var path = this.updateTempDir + "/" + filePath;
+        cc.log(path, url, self.fetchIndex);
+        var dotIndex = filePath.lastIndexOf("/");
+        var tempDir = filePath.substr(0, dotIndex);
+        var dir = this.updateTempDir + "/" + tempDir;
+        false == jsb.fileUtils.isDirectoryExist(dir) && jsb.fileUtils.createDirectory(dir);
+        mycc.HttpHelper.getInstance().fetch(url, path, function(ok, filename) {
+          if (ok) if (self.fetchIndex < self.needFetchFiles.length - 1) {
+            self.fetchIndex = self.fetchIndex + 1;
+            self.fetchOne();
+          } else self.tempToUpdate(); else cc.log("download error: ", url);
+        });
+      },
+      tempToUpdate: function tempToUpdate() {
+        for (var i = 0; i < this.needFetchFiles.length; i++) {
+          var filePath = this.needFetchFiles[i];
+          var dotIndex = filePath.lastIndexOf("/");
+          var tempDir = filePath.substr(0, dotIndex);
+          var dir = this.updateDir + "/" + tempDir;
+          false == jsb.fileUtils.isDirectoryExist(dir) && jsb.fileUtils.createDirectory(dir);
+          var srcFile = this.updateTempDir + "/" + filePath;
+          var dstFile = this.updateDir + "/" + filePath;
+          jsb.fileUtils.renameFile(srcFile, dstFile);
+        }
+        for (var _i = 0; _i < this.needRemoveFiles; _i++) {
+          var file = this.updateDir + "/" + this.needRemoveFiles[_i];
+          jsb.fileUtils.removeFile(file);
+        }
+        var srcPackageJson = this.updateTempDir + "/package.json";
+        var dstPackageJson = this.updateDir + "/res/package.json";
+        jsb.fileUtils.renameFile(srcPackageJson, dstPackageJson);
+        cc.log("\u66f4\u65b0\u5b8c\u6bd5\uff0c\u91cd\u542f\u6e38\u620f");
+        cc.director.loadScene("LoginScene");
+      },
+      start: function start() {}
+    });
     cc._RF.pop();
   }, {} ],
   activity: [ function(require, module, exports) {
@@ -8883,5 +9035,5 @@ window.__require = function e(t, n, r) {
     App: "App",
     Tools: "Tools"
   } ]
-}, {}, [ "billManager", "itemManager", "personalManager", "shareManager", "ShaderHelper", "ShaderNameLabel", "ShaderTime", "bankList", "gameLogo", "provinces", "activity", "battleEnd", "bet", "betSuccess", "bindAlipay", "bindDebitCard", "bindSuccess", "conversion", "createRoom", "customer", "datePick", "friend", "friendBattle", "friendBattleRoom", "gameplaza", "goldPool", "inviteFriend", "joinRoom", "moreGame", "networkError", "notice", "noticeView", "openBank", "personalInfo", "receiveAward", "recharge", "rechargeAmount", "setting", "settleInfo", "signin", "signin1", "strongbox", "FadeMsg", "Global", "HallScene", "Loading", "LoginScene", "RegisterScene", "ResetPasswordScene", "SDKNode", "ShishileScene", "scrollItemScale", "App", "BankInfoBean", "CryptoJS", "HttpCenter", "MyUser", "SDKTools", "Tools" ]);
+}, {}, [ "billManager", "itemManager", "personalManager", "shareManager", "ShaderHelper", "ShaderNameLabel", "ShaderTime", "bankList", "gameLogo", "provinces", "activity", "battleEnd", "bet", "betSuccess", "bindAlipay", "bindDebitCard", "bindSuccess", "conversion", "createRoom", "customer", "datePick", "friend", "friendBattle", "friendBattleRoom", "gameplaza", "goldPool", "inviteFriend", "joinRoom", "moreGame", "networkError", "notice", "noticeView", "openBank", "personalInfo", "receiveAward", "recharge", "rechargeAmount", "setting", "settleInfo", "signin", "signin1", "strongbox", "FadeMsg", "Global", "HallScene", "Loading", "LoginScene", "RegisterScene", "ResetPasswordScene", "SDKNode", "ShishileScene", "scrollItemScale", "App", "BankInfoBean", "CryptoJS", "HttpCenter", "MyUser", "SDKTools", "Tools", "UpdateScene" ]);
 //# sourceMappingURL=project.dev.js.map
