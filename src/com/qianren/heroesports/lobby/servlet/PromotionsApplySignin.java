@@ -12,16 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import com.qianren.heroesports.utils.H5Utils;
 
 /**
- * Servlet implementation class PromotionsCheckSignin
+ * Servlet implementation class PromotionsApplySignin
  */
-@WebServlet("/promotions/checkSignin")
-public class PromotionsCheckSignin extends HttpServlet {
+@WebServlet("/promotions/applySignin")
+public class PromotionsApplySignin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PromotionsCheckSignin() {
+    public PromotionsApplySignin() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,24 +35,12 @@ public class PromotionsCheckSignin extends HttpServlet {
 		H5Utils.setHeaders(response);
 		PrintWriter out = response.getWriter();
 		out.println("{\n" + 
-				"    \"code\": 200,\n" + 
-				"    \"data\": {\n" + 
-				"        \"signInDays\": null,\n" + 
-				"        \"continuousSignSize\": 6,\n" + 
-				"        \"signedToday\": false,\n" + 
-				"        \"applyTotalSignToday\": false,\n" + 
-				"        \"totalSignSize\": 0,\n" + 
-				"        \"bonusMap\": {\n" + 
-				"            \"1\": 1,\n" + 
-				"            \"2\": 2,\n" + 
-				"            \"3\": 3,\n" + 
-				"            \"4\": 5,\n" + 
-				"            \"5\": 8,\n" + 
-				"            \"6\": 12,\n" + 
-				"            \"7\": 15\n" + 
-				"        }\n" + 
-				"    },\n" + 
-				"    \"message\": \"success\"\n" + 
+				"  \"code\": 200,\n" + 
+				"  \"data\": {\n" + 
+				"    \"balance\": 0,\n" + 
+				"    \"message\": \"string\"\n" + 
+				"  },\n" + 
+				"  \"message\": {}\n" + 
 				"}");
 	}
 
