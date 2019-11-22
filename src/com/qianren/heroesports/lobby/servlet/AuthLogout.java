@@ -12,16 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import com.qianren.heroesports.utils.H5Utils;
 
 /**
- * Servlet implementation class PromotionsCheckSignin
+ * Servlet implementation class AuthLogout
  */
-@WebServlet("/promotions/checkSignin")
-public class PromotionsCheckSignin extends HttpServlet {
+@WebServlet("/auth/logout")
+public class AuthLogout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PromotionsCheckSignin() {
+    public AuthLogout() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,22 +36,7 @@ public class PromotionsCheckSignin extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("{\n" + 
 				"    \"code\": 200,\n" + 
-				"    \"data\": {\n" + 
-				"        \"signInDays\": null,\n" + 
-				"        \"continuousSignSize\": 4,\n" + 
-				"        \"signedToday\": false,\n" + 
-				"        \"applyTotalSignToday\": false,\n" + 
-				"        \"totalSignSize\": 0,\n" + 
-				"        \"bonusMap\": {\n" + 
-				"            \"1\": 1,\n" + 
-				"            \"2\": 2,\n" + 
-				"            \"3\": 3,\n" + 
-				"            \"4\": 5,\n" + 
-				"            \"5\": 8,\n" + 
-				"            \"6\": 12,\n" + 
-				"            \"7\": 15\n" + 
-				"        }\n" + 
-				"    },\n" + 
+				"    \"data\": null,\n" + 
 				"    \"message\": \"success\"\n" + 
 				"}");
 	}
@@ -63,7 +48,7 @@ public class PromotionsCheckSignin extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-	
+
 	@Override
 	protected void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub

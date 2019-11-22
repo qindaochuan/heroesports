@@ -12,16 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import com.qianren.heroesports.utils.H5Utils;
 
 /**
- * Servlet implementation class PromotionsCheckSignin
+ * Servlet implementation class UsersChangePassword
  */
-@WebServlet("/promotions/checkSignin")
-public class PromotionsCheckSignin extends HttpServlet {
+@WebServlet("/users/changePassword")
+public class UsersChangePassword extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PromotionsCheckSignin() {
+    public UsersChangePassword() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,23 +36,11 @@ public class PromotionsCheckSignin extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("{\n" + 
 				"    \"code\": 200,\n" + 
-				"    \"data\": {\n" + 
-				"        \"signInDays\": null,\n" + 
-				"        \"continuousSignSize\": 4,\n" + 
-				"        \"signedToday\": false,\n" + 
-				"        \"applyTotalSignToday\": false,\n" + 
-				"        \"totalSignSize\": 0,\n" + 
-				"        \"bonusMap\": {\n" + 
-				"            \"1\": 1,\n" + 
-				"            \"2\": 2,\n" + 
-				"            \"3\": 3,\n" + 
-				"            \"4\": 5,\n" + 
-				"            \"5\": 8,\n" + 
-				"            \"6\": 12,\n" + 
-				"            \"7\": 15\n" + 
-				"        }\n" + 
-				"    },\n" + 
-				"    \"message\": \"success\"\n" + 
+				"    \"data\": null,\n" + 
+				"    \"message\": {\n" + 
+				"        \"en\": \"the new password cannot be the same as the current password\",\n" + 
+				"        \"zh\": \"新密码不能与当前密码一样\"\n" + 
+				"    }\n" + 
 				"}");
 	}
 
