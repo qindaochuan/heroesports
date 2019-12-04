@@ -43,13 +43,16 @@ public class Eimage extends HttpServlet {
 		String path = request.getSession().getServletContext().getRealPath("");
 		String imagePath = path + "partylogo/" + fileName;
 		File file = new File(imagePath);
+		ServletOutputStream output = response.getOutputStream();
 		if (file.exists()) {
 			FileInputStream in = new FileInputStream(file);
 			byte[] buffer = new byte[(int) file.length()];
 			in.read(buffer);
-			ServletOutputStream output = response.getOutputStream();
 			output.write(buffer);
 			in.close();
+		}else {
+			String url = "https://www.nmgdjkj.com/file/" + fileName;
+			H5Utils.downloadImg(url,imagePath,output);
 		}
 	}
 

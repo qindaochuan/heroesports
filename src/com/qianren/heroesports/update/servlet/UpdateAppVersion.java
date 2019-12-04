@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.alibaba.fastjson.JSONObject;
+import com.qianren.heroesports.utils.H5Utils;
 
 /**
  * Servlet implementation class UpdateAppVersion
@@ -37,6 +38,7 @@ public class UpdateAppVersion extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		H5Utils.setHeaders(response);
 		// 是否是苹果审核
 		final boolean isAudit = true;
 		final String user = request.getParameter("user");
@@ -73,7 +75,7 @@ public class UpdateAppVersion extends HttpServlet {
 			PrintWriter out = response.getWriter();
 			out.print(resultObj.toJSONString());
 		} else {
-
+			System.out.println("user error!" + user);
 		}
 	}
 
