@@ -51,6 +51,7 @@ public class Eimage extends HttpServlet {
 			output.write(buffer);
 			in.close();
 		}else {
+			System.out.println("下载"+fileName);
 			String url = "https://www.nmgdjkj.com/file/" + fileName;
 			H5Utils.downloadImg(url,imagePath,output);
 		}
